@@ -1,3 +1,7 @@
+body, p, div, img, h1, h2, select, input, button, span{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #888;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4{
+  color: darken(#888, 20%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.d-flex {
+  display: flex !important;
 }

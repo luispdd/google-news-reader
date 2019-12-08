@@ -1,0 +1,18 @@
+@import "./assets/scss/variables";
+
+.aside {
+ 
+  @media (max-width: $md) {
+    display: none;
+  }
+  @media (min-width: $md) {
+    min-width: 300px;
+    max-width: 300px;
+  }
+}
+
+.mobileNav {
+  @media (min-width: $md) {
+    display: none;
+  }
+}
