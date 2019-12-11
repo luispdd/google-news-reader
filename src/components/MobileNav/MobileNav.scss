@@ -1,0 +1,16 @@
+@import "../../assets/scss/variables";
+
+@import "../../assets/scss/variables";
+
+.navContent{
+  padding: 2.0rem 2.0rem 0 2.0rem;
+  display: flex;
+  justify-content: space-between;
+  .icon{
+    width: 30px;
+    height: 30px;
+    &.menu{
+      cursor: pointer;
+    }
+  }
+}

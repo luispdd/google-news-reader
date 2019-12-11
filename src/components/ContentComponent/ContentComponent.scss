@@ -1,0 +1,63 @@
+@import "../../assets/scss/variables";
+
+.content{
+  padding: 2rem;
+  h2{
+    border-bottom: 1px solid $primary-color;
+    padding-bottom: 0.2rem;
+  }
+  .errorMessage{
+    padding: 2.0rem;
+    color: red;
+  }
+
+  #headlinesList{
+    justify-content: space-between;
+    padding-bottom: 2.0rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: $xl) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: $sm) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    grid-gap: 1.4rem;
+    .article{
+      flex-direction: column;
+      justify-content: space-between;
+      &:hover {
+        box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.3)
+      }
+      .imageContainer{
+        img{
+          width: 100%;
+        }
+      }
+      .innerContent {
+        padding: 0.5rem;
+        h4 {
+          margin: 0;
+        }
+        .details {
+          flex-direction: row;
+          justify-content: space-between;
+          .date:before{
+            content: "";
+            display: block;
+            background: url(../../assets/img/calendar.svg) no-repeat;
+            width: 17px;
+            height: 17px;
+            float: left;
+            background-size: cover;
+            margin-right: 6px;
+            float: left;
+          }
+          a{
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+}

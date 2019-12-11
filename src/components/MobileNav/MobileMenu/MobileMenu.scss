@@ -1,0 +1,26 @@
+@import "../../../assets/scss/variables";
+
+.menuContent{
+  .floatMenu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    min-height: 100%;
+    .icon{
+      float: right;
+      width: 1.2rem;
+      height: 1.2rem;
+      margin: 15px 5px 0 0;
+      &.close{
+        cursor: pointer;
+      }
+    }
+    .menuContainer{
+      width: 80%;
+      min-height: 100vh;
+      background-color: $background;
+    }
+  }
+}
